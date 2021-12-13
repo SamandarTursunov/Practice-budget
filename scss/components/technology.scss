@@ -1,0 +1,56 @@
+/*! technology*/
+@use "../abstract/mixins" as c;
+@use "../abstract/variables" as vari;
+@use "../base/base";
+@use "../base/typograpyh.scss";
+
+.technology {
+    @include c.result-margin;
+    text-align: center;
+    height: 31.25rem; // 500 / 16 
+}
+
+.technology-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: vari.$padding + 32;
+    position: relative;
+
+    &__h2 {
+        font-weight: vari.$font-weight;
+        font-size: vari.$base-text-size + 20;
+    }
+
+    &__item {
+        width: 14.0625rem; // 255 / 16 
+        height: 14.125rem; // 226 / 16 
+        margin-right: 1.875rem; // 30 / 16
+        cursor: pointer;
+    }
+    
+    &__icon {
+        padding-bottom: vari.$padding - 1;
+    }
+
+    &__subtitle-h2 {
+        font-weight: vari.$font-weight + 100;
+        font-size: vari.$base-text-size + 2;
+        padding-bottom: vari.$padding - 10; 
+    }
+
+    &__p {
+        font-weight: vari.$font-weight - 200;
+        font-size: vari.$base-text-size - 4;
+        line-height: 0.9rem; // 14.4 / 16 
+    }
+
+    &__figure-absolute {
+        width: 117px;
+        position: relative;
+        top: 22%;
+        left: 24%;
+    }
+}
+/*! /technology*/

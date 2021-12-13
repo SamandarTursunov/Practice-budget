@@ -1,0 +1,95 @@
+@use "../abstract/variables" as vari;
+@use "../base/base";
+@use "../base/typograpyh.scss";
+
+/*! nav-site */
+.site-nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem; // 16
+
+
+    &__ul {
+        width: 445px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+    }
+    &__li {
+        padding-right: 1.75rem; // 16 / 28 = 1.75
+
+        .site-nav__a {
+            font-weight: 700;
+            font-size: 14px;
+            color: vari.$secondary-color;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                border-bottom: 2px solid vari.$primary-color;
+                color: vari.$primary-color;
+            }
+
+        }
+
+    }
+
+
+}
+
+.site-header__logo {
+    display: flex;
+    align-items: center;
+    width: 1.71rem; // 29px
+    height: 1.71rem; // 29px
+    cursor: pointer;
+    margin: {
+        right: 0.625rem; // 10px
+    }
+
+    .site-header__h2 {
+        color: vari.$secondary-color;
+        font-weight: 700;
+        font-size: 1.125rem; // 18px
+        transition: 0.4s ease-in-out;
+        &:hover {
+            color: vari.$primary-color;
+        }
+    }
+
+    
+}
+
+.site-nav__login {     
+    .site-nav__login-a {
+        width: 100px;
+        height: 40px;
+        color: vari.$secondary-color;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        transition: 0.4s ease-in-out;
+        padding: {
+            top: 0.5625rem; // 9px
+            right: 28px;
+            bottom: 12px;
+            left: 29px;
+        }
+        border-radius: 0.375rem; // 6px 
+        border: 1px solid vari.$secondary-color;
+        cursor: pointer;
+    }
+
+    .site-nav__login-a:hover {
+        background-color: vari.$secondary-bg-color;
+        color: vari.$secondary-color;
+        border: 1px solid vari.$primary-color;
+    }
+}
+/*! /nav-site */
+

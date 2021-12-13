@@ -1,0 +1,34 @@
+@use "../abstract/variables" as vari; 
+/*! BASE */
+* {
+    box-sizing: border-box;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    font-size: vari.$base-text-size;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 782px;
+    $secondary-bg-color: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+    background: $secondary-bg-color;
+    opacity: 80%;
+}

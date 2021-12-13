@@ -1,0 +1,71 @@
+/*! features*/
+@use "../abstract/mixins" as c;
+@use "../abstract/variables" as vari;
+@use "../base/base";
+@use "../base/typograpyh.scss";
+
+.section-featurs {
+    height: 660px;
+    text-align: center;
+     
+    .section-featur__h2 {
+    font-weight: vari.$font-weight;
+    font-size: vari.$base-text-size * 2 + 4;
+    line-height: 43.2px;
+    } 
+}
+
+.featur-both {
+    width: 100%;
+    margin-top: 63px;
+    display: flex;
+    justify-content: space-around;
+
+    .featur__col {
+        position: relative;
+        
+    }
+    
+    .featur__row {  
+        width: 293px;
+        height: 198px;
+        position: absolute ;
+        top: 157px;
+        left: 8%;
+        background-color: vari.$primary-bg-color;
+        padding: 32px 32px 25px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        cursor: pointer;
+        @include c.result-margin;
+        @include c.shadow;
+
+        .featur__h2 {
+            font-weight: vari.$font-weight + 100;
+            font-size: vari.$base-text-size + 2;
+            line-height: 21px;
+            padding-bottom: vari.$padding;
+        }
+
+        .featur__p {
+            font-weight: vari.$font-weight - 200;
+            font-size: vari.$base-text-size - 4;
+            line-height: 18px;
+            padding-bottom: vari.$padding;
+        }
+
+        .featur__a {
+            font-weight: vari.$font-weight + 100;
+            font-size: vari.$base-text-size - 4;
+            color: vari.$primary-color;
+            
+        }
+
+    }
+
+    .featur__img {
+        cursor: pointer;
+    } 
+
+}
+/*! /feature*/

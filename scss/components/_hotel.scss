@@ -1,0 +1,75 @@
+@use "../abstract/mixins" as c;
+@use "../abstract/variables" as vari;
+@use "../base/base";
+@use "../base/typograpyh.scss";
+/*! hotel */
+
+.expensive-hotel {
+    width: 100vw;
+    height: 500px;
+    background-color: vari.$secondary-bg-color;
+    box-sizing: border-box;
+} 
+
+.expe-hotel{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-top: 9%;
+
+    &__item-1 {
+        margin-right: 81px;
+    }
+
+    &__title-h2 {
+        width: 445px;
+        color: vari.$secondary-color;
+        font-weight: vari.$font-weight;
+        font-size: vari.$base-text-size + 20;
+    }
+
+    &__parag-p {
+        padding: {
+        top: 24px;
+        bottom: 32px;
+        }
+        width: 445px;
+        color: vari.$secondary-color;
+        font-weight: vari.$font-weight - 200;
+        font-size: vari.$base-text-size - 2;
+        line-height: 19px;
+    }
+
+    &__operatsion {
+        display: flex;
+    }
+
+    &__playmarket, &__apps, &__window {
+        padding-right: 25px;
+        cursor: pointer;
+    }
+
+    &__item-2 {
+        position: relative;
+    }
+
+    &__img {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__img-1 {
+        @include c.index;
+        top: 20px;
+        left: -58px;
+    }
+
+    &__img-2 {
+        @include c.index;
+        top: 20px;
+        right: -58px;
+    } 
+
+}
+/*! /hotel */

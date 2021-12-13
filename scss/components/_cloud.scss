@@ -1,0 +1,58 @@
+@use "../abstract/variables" as vari;
+@use "../base/base";
+@use "../base/typograpyh.scss";
+/*! header-section */
+.header-section {
+    width: 558px;
+    height: auto;
+    text-align: center;
+    margin: vari.$padding * 5 auto 0;
+
+    &__h1 {
+        
+        color: vari.$secondary-color;
+        font-size: 72px;
+        font-weight: vari.$font-weight + 100;
+    }
+
+    &__p {
+        width: 90%;
+        color: vari.$secondary-color;
+        font-size: 24px;
+        font-weight: vari.$font-weight;
+        line-height: 36px;
+        padding: {
+            top: vari.$padding + 19;  
+        } 
+        margin: 0 auto;
+    }
+
+    &__signup {
+        text-align: center;
+        margin: 39px auto 0;
+        cursor: pointer;
+
+        .header-section__a {
+            font-weight: vari.$font-weight;
+            font-size: 0.875rem;// 14 / 16px 
+            color: vari.$primary-color;
+            padding: {
+                top: 17px;
+                right: 53px;
+                bottom: 16px;
+                left: 52px;
+                }
+            border-radius: 6px; 
+            background: vari.$primary-bg-color;
+            transition: 0.4s ease-in-out;
+        }  
+
+        .header-section__a:hover {
+            background-color: vari.$secondary-bg-color;
+            color: vari.$secondary-color;
+        }
+    }
+
+
+}
+/*! /header-section */

@@ -1,0 +1,72 @@
+@use "../abstract/mixins" as c;
+@use "../abstract/variables" as vari;
+@use "../base/base";
+@use "../base/typograpyh.scss";
+
+/*! footer */
+.footer {
+    $bg-color: #FAFAFA;
+    background-color: $bg-color;
+    width: 100%;
+    height: auto;
+    padding: 5rem 0 5rem 0;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item {
+        width: 254px;
+        height: 164px;
+        text-transform: capitalize;
+    }
+
+    &__h2 {
+        font-weight: vari.$font-weight + 100;
+        font-size: vari.$base-text-size + 2;
+        padding-bottom: 2.1rem;
+
+    }
+
+    &__p {
+        width: 48%;
+        font-weight: vari.$font-weight - 200;
+        font-size: vari.$base-text-size - 2;
+        line-height: 1.2rem;
+    }
+
+    &__email {
+        font-weight: vari.$font-weight - 200;
+        font-size: vari.$base-text-size - 4;
+        cursor: pointer;
+
+        & img {
+            padding-right: 1rem;
+        }
+    }
+    
+    &__email > span {
+        display: block;
+        padding: {
+            bottom: 1.5rem;
+            top: 1.5rem;
+        }
+    }
+
+
+    .number {
+        font-weight: vari.$font-weight - 200;
+        font-size: vari.$base-text-size - 4;
+    }
+
+}
+
+.site-footer__block {
+    margin-top: 8.8rem;
+    font-weight: vari.$font-weight - 200;
+    font-size: vari.$base-text-size - 4;
+}
+
+/*! /footer */

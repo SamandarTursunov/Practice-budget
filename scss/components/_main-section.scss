@@ -1,0 +1,88 @@
+@use "../abstract/variables" as vari;
+@use "../base/base";
+@use "../base/typograpyh.scss";
+/*! main-section*/
+.main-section {
+    margin: 94px auto 0;
+}
+
+.bussines-vidio {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    
+    .main-section__buss-h2 {
+        width: 445px;
+        height: 107px;
+        font-weight: vari.$font-weight;
+        font-size: vari.$base-text-size * 2 + 4;
+        line-height: 43.2px;
+
+    }
+
+    .main-section__buss-p {
+        width: 445px;
+        height: 115px;
+        font-weight: vari.$font-weight - 200; 
+        font-size: vari.$base-text-size - 2;
+        line-height: 19.6px;
+    }
+
+    .main-section__buss-a {
+        font-weight: vari.$font-weight - 200; 
+        font-size: vari.$base-text-size - 2;
+        line-height: 19.4px;
+        color: vari.$primary-color;
+        position: relative;
+        padding-bottom: 4px;
+        border-bottom: 1px solid transparent;
+        
+
+        &:hover::after {
+            content: '';
+            transition: 1s ease-in-out;
+            position: absolute;
+            left: -4px;
+            bottom: 0;
+            width: 1.5px;
+            height: 20px;
+            background-color: vari.$secondary-bg-color;
+            
+            
+        }
+
+        &:hover {
+            transition: 1s;
+            border-bottom: 1px solid vari.$secondary-bg-color;
+        }
+    }
+
+    .main-section__icon-img {
+        margin: {
+            left: 92px;
+        }
+        position: relative;
+        cursor: pointer;
+        
+        
+        
+    }
+
+    .main-section__icon {
+        position: absolute;
+        top: 123px;
+        left: -30px;
+        border-radius: 50%;
+        &:hover {
+            background-color: vari.$secondary-bg-color;
+        }
+    }
+    
+
+            
+
+}
+
+
+
+/*! /main-section*/

@@ -1,0 +1,14 @@
+@use "./base/base";
+@use "./base/typograpyh.scss";
+@use "./abstract/variables";
+@use "./abstract/mixins";
+@use "./abstract/position";
+@use "./layout/index.scss";
+@use "./components/menu";
+@use "./components/cloud";
+@use "./components/main-section";
+@use "./components/featur";
+@use "./components/technology.scss";
+@use "./components/hotel";
+@use "./components/contact";
+@use "./components/footer";
